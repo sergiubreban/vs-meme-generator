@@ -1,17 +1,23 @@
 {
-	"name": "memezaur",
-	"displayName": "memezaur",
+	"name": "memegen",
+	"displayName": "memegen",
 	"description": "meme recreation tool",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.56.0"
 	},
-	"publisher": "Sergiu-Florin Breban",
+	"publisher": "Sergiu-Florin-Breban",
 	"categories": [
-		"Visualization", "Other"
+		"Visualization",
+		"Other"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sergiubreban/vs-meme-generator.git"
+	},
+	"icon": "logo.png",
 	"activationEvents": [
-		"onCommand:memezaur.memeGenerator",
+		"onCommand:memegen.memeGenerator",
 		"onView:meme-sidebar"
 	],
 	"main": "./out/extension.js",
@@ -20,7 +26,7 @@
 			"activitybar": [
 				{
 					"id": "meme-sidebar-view",
-					"title": "Meme Sidebar View",
+					"title": "Meme",
 					"icon": "media/icon.svg"
 				}
 			]
@@ -30,7 +36,7 @@
 				{
 					"type": "webview",
 					"id": "meme-sidebar",
-					"name": "Meme Sidebar",
+					"name": "Generator",
 					"icon": "media/icon.svg",
 					"contextualTitle": "brb"
 				}
@@ -38,7 +44,7 @@
 		},
 		"commands": [
 			{
-				"command": "memezaur.memeGenerator",
+				"command": "memegen.memeGenerator",
 				"title": "Meme generator"
 			}
 		]

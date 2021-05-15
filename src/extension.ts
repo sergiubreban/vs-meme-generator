@@ -15,7 +15,7 @@ export function activate(context: vscode.ExtensionContext) {
       sidebarProvider
     )
   );
-	context.subscriptions.push(vscode.commands.registerCommand('memezaur.memeGenerator', () => {
+	context.subscriptions.push(vscode.commands.registerCommand('memegen.memeGenerator', () => {
 		TabPanel.createOrShow(context.extensionUri);
 	}));
 
