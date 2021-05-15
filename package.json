@@ -1,16 +1,17 @@
 {
-	"name": "memozaur",
-	"displayName": "memozaur",
+	"name": "memezaur",
+	"displayName": "memezaur",
 	"description": "meme recreation tool",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.56.0"
 	},
+	"publisher": "Sergiu-Florin Breban",
 	"categories": [
-		"Other"
+		"Visualization", "Other"
 	],
 	"activationEvents": [
-		"onCommand:memozaur.memeGenerator",
+		"onCommand:memezaur.memeGenerator",
 		"onView:meme-sidebar"
 	],
 	"main": "./out/extension.js",
@@ -37,7 +38,7 @@
 		},
 		"commands": [
 			{
-				"command": "memozaur.memeGenerator",
+				"command": "memezaur.memeGenerator",
 				"title": "Meme generator"
 			}
 		]

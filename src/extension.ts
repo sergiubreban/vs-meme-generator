@@ -8,7 +8,6 @@ import { SidebarProvider } from './SidebarProvider';
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
-	console.log('Congratulations, your extension "memozaur" is now active!');
 	const sidebarProvider = new SidebarProvider(context.extensionUri);
   context.subscriptions.push(
     vscode.window.registerWebviewViewProvider(
@@ -16,7 +15,7 @@ export function activate(context: vscode.ExtensionContext) {
       sidebarProvider
     )
   );
-	context.subscriptions.push(vscode.commands.registerCommand('memozaur.memeGenerator', () => {
+	context.subscriptions.push(vscode.commands.registerCommand('memezaur.memeGenerator', () => {
 		TabPanel.createOrShow(context.extensionUri);
 	}));
 
